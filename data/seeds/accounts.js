@@ -2,6 +2,7 @@
 exports.seed = function(knex, Promise) {
   return knex('accounts').truncate()
     .then(function () {
+      
       return knex('accounts').insert([
         { name: 'account-01', budget: 4000.00 },
         { name: 'account-02', budget: 206.75 },
